@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    
+
+  <meta charset="UTF-8">
+  <title>3D Mодель солнечной системы</title>
+	<link href="/css/planet.css" rel="stylesheet" type="text/css" />
+    <script src="js/prefixfree.min.js"></script>
+    <meta name="description" content="3D модель солнечной системы онлайн">
+    <meta name="keywords" content="Солнце, Меркурий, Венера, Земля, Марс, Юпитер, Сатурн, Уран, Нептун" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(57393937, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57393937" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+    <div id="navbar">
+      <a id="toggle-data" href="#data"><i class="icon-data"></i>Информация</a>
+      <h1>3D Mодель солнечной системы<br><span>by <a href="https://twitter.com/RishatSPB" target="_blank">@RishatSPB</a></span></h1>
+      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Управления</a>
+    </div>
+    <div id="data">
+      <a class="sun" title="sun" href="#sunspeed">Солнце</a>
+      <a class="mercury" title="mercury" href="#mercuryspeed">Меркурий</a>
+      <a class="venus" title="venus" href="#venusspeed">Венера</a>
+      <a class="earth active" title="earth" href="#earthspeed">Земля</a>
+      <a class="mars" title="mars" href="#marsspeed">Марс</a>
+      <a class="jupiter" title="jupiter" href="#jupiterspeed">Юпитер</a>
+      <a class="saturn" title="saturn" href="#saturnspeed">Сатурн</a>
+      <a class="uranus" title="uranus" href="#uranusspeed">Уран</a>
+      <a class="neptune" title="neptune" href="#neptunespeed">Нептун</a>
+    </div>
+    <div id="controls">
+      <label class="set-view">
+        <input type="checkbox">
+      </label>
+      <label class="set-zoom">
+        <input type="checkbox">
+      </label>
+      <label>
+        <input type="radio" class="set-speed" name="scale" checked>
+        <span>Cкорость</span>
+      </label>
+      <label>
+        <input type="radio" class="set-size" name="scale">
+        <span>Размер</span>
+      </label>
+      <label>
+        <input type="radio" class="set-distance" name="scale">
+        <span>Расстояние</span>
+      </label>
+    </div>
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="solar-system" class="earth">
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Меркурий</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Венера</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Земля</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Марс</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Юпитер</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dt>Сатурн</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Уран</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Нептун</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dt>Солнце</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/prefixfree.min.js"></script>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
