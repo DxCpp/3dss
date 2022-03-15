@@ -1,3 +1,3 @@
 # 3dss
 
-![Screenshot](./screenshot.png?raw=true)
+![Screenshot](./screenshot.png)
